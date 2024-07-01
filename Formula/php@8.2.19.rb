@@ -12,6 +12,12 @@ class PhpAT8219 < Formula
     regex(/href=.*?php[._-]v?(#{Regexp.escape(version.major_minor)}(?:\.\d+)*)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/ultrapremiumdirect/homebrew-upd-brew/releases/download/php@8.2.19-8.2.19"
+    sha256 arm64_sonoma: "f2ce3057d042f474aacc06d8482ce4fc11ed09c264ab3b104602c714a194b8aa"
+    sha256 x86_64_linux: "7caed2dff1d3b2f40e09ace76965c3ac58a82e498c933546074f51abdf6a1a08"
+  end
+
   keg_only :versioned_formula
 
   # Security Support Until 31 Dec 2026
